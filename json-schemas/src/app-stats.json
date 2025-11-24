@@ -1524,6 +1524,16 @@
           "inclusiveMinimum": 0,
           "description": "Total number of successfully-delivered Push notifications over the APNS transport."
         },
+        "push.notifications.delivered.apnsLocation": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of successfully-delivered APNS location Push notifications."
+        },
+        "push.notifications.delivered.apnsAlert": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of successfully-delivered APNS alert Push notifications."
+        },
         "push.notifications.delivered.web": {
           "type": "number",
           "inclusiveMinimum": 0,
@@ -1548,6 +1558,16 @@
           "type": "number",
           "inclusiveMinimum": 0,
           "description": "Total number of Push notifications that Ably attempted to deliver to APNS but were refused with a retriable error (so which Ably will attempt to retry)."
+        },
+        "push.notifications.refused.retriable.apnsLocation": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS location Push notifications that Ably attempted to deliver but were refused with a retriable error (so which Ably will attempt to retry)."
+        },
+        "push.notifications.refused.retriable.apnsAlert": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS alert Push notifications that Ably attempted to deliver but were refused with a retriable error (so which Ably will attempt to retry)."
         },
         "push.notifications.refused.retriable.web": {
           "type": "number",
@@ -1574,6 +1594,16 @@
           "inclusiveMinimum": 0,
           "description": "Total number of Push notifications that Ably attempted to deliver to APNS but were refused with a non-retriable error."
         },
+        "push.notifications.refused.final.apnsLocation": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS location Push notifications that Ably attempted to deliver but were refused with a non-retriable error."
+        },
+        "push.notifications.refused.final.apnsAlert": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS alert Push notifications that Ably attempted to deliver but were refused with a non-retriable error."
+        },
         "push.notifications.refused.final.web": {
           "type": "number",
           "inclusiveMinimum": 0,
@@ -1588,6 +1618,16 @@
           "type": "number",
           "inclusiveMinimum": 0,
           "description": "Total number of Push notifications that Ably did not attempt to deliver to APNS, for example APNS location push notifications sent over a channel to subscribing devices without location tokens."
+        },
+        "push.notifications.skipped.apnsLocation": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS location Push notifications that Ably did not attempt to deliver, for example APNS location push notifications sent over a channel to subscribing devices without location tokens."
+        },
+        "push.notifications.skipped.apnsAlert": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of APNS alert Push notifications that Ably did not attempt to deliver, for example APNS alert push notifications sent over a channel to subscribing devices without alert tokens."
         },
         "push.notifications.skipped.total": {
           "type": "number",
@@ -1608,6 +1648,16 @@
           "type": "number",
           "inclusiveMinimum": 0,
           "description": "Total number of attempts (whatever the outcome) to deliver Push notifications over the APNS transport."
+        },
+        "push.notifications.all.apnsLocation": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of attempts (whatever the outcome) to deliver APNS location Push notifications."
+        },
+        "push.notifications.all.apnsAlert": {
+          "type": "number",
+          "inclusiveMinimum": 0,
+          "description": "Total number of attempts (whatever the outcome) to deliver APNS alert Push notifications."
         },
         "push.notifications.all.web": {
           "type": "number",
